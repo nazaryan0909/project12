@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background: url('https://media.istockphoto.com/id/1467941309/vector/seamless-pattern-with-christian-religion-icons-holy-communion-chalice-grapes-praying-hands.jpg?s=612x612&w=0&k=20&c=6MGgg1xzQjE016_MhJsOo9JO1rn5ssZ_PwSunyDFuz4=') repeat;
+            background: url('https://i.pinimg.com/736x/a3/0c/8e/a30c8e336de8a26e47f2cb1c8919e497.jpg') repeat;
             background-size: 400px 300px;
             text-align: center;
         }
@@ -36,13 +36,11 @@
             display: flex;
             justify-content: center;
             gap: 20px; /* Adjusted for better spacing */
-            flex-wrap: wrap; /* Makes the gallery responsive */
             margin: 20px;
         }
         .gallery img {
-            width: 100%; /* Full width of its container */
-            max-width: 250px; /* Prevents it from getting too large */
-            height: auto; /* Maintains aspect ratio */
+            width: 250px; /* Slightly larger than before */
+            height: 190px;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
             object-fit: cover;
@@ -62,27 +60,12 @@
             color: #0073e6;
             text-decoration: none;
         }
+        /* Centering the countdown timer */
         .countdown-container {
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 20px;
-        }
-        /* Styling the location links to look like buttons */
-        .button-link {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 1rem;
-            background-color: #0073e6;
-            color: white;
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-        .button-link:hover {
-            background-color: #005bb5;
         }
     </style>
 </head>
@@ -94,7 +77,7 @@
     <!-- Countdown Timer from Logwork -->
     <div class="countdown-container">
         <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-        <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="columns" data-width="532" data-timezone="America/Los_Angeles" data-date="2025-02-23 18:00">Մնաց</a>
+        <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="columns" data-width="400" data-timezone="America/Los_Angeles" data-date="2025-02-23 18:00">Մնաց</a>
     </div>
 
     <div class="details">
@@ -102,8 +85,8 @@
         <p><strong>Contact:</strong>818-573-7766</p>
         <p><strong>Location App Links:</strong></p>
         <p>
-            <a href="https://beta.maps.apple.com/?auid=12961847606178316256&lsp=9902" target="_blank" class="button-link">Apple Map</a> 
-            <a href="https://maps.app.goo.gl/kyitoxFpVbSM8hqL9" target="_blank" class="button-link">Google Map</a>
+            <a href="https://beta.maps.apple.com/?auid=12961847606178316256&lsp=9902" target="_blank">Apple Map</a> | 
+            <a href="https://maps.app.goo.gl/kyitoxFpVbSM8hqL9" target="_blank">Google Map</a>
         </p>
     </div>
 
