@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baptism Invitation</title>
+    <script src="https://cdn.logwork.com/widget/countdown.js"></script>
     <style>
+        /* General body styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
-            background: url('https://i.pinimg.com/enabled_lo_mid/736x/b6/58/38/b6583889d1a8cc8fc20cb8ffb57cc12d.jpg') repeat;
+            background: url('https://media.istockphoto.com/id/1467941309/vector/seamless-pattern-with-christian-religion-icons-holy-communion-chalice-grapes-praying-hands.jpg?s=612x612&w=0&k=20&c=6MGgg1xzQjE016_MhJsOo9JO1rn5ssZ_PwSunyDFuz4=') repeat;
             background-size: 400px 300px;
             text-align: center;
         }
@@ -37,10 +39,12 @@
             justify-content: center;
             gap: 20px; /* Adjusted for better spacing */
             margin: 20px;
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
         }
         .gallery img {
-            width: 250px; /* Slightly larger than before */
-            height: 190px;
+            width: 100%; /* Make images responsive */
+            max-width: 250px; /* Set a max width */
+            height: auto; /* Maintain aspect ratio */
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
             object-fit: cover;
@@ -67,6 +71,33 @@
             align-items: center;
             margin: 20px;
         }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            .details {
+                font-size: 1rem;
+                width: 90%;
+            }
+            .gallery img {
+                width: 100%;
+                max-width: 200px; /* Smaller size on phones */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .details {
+                font-size: 0.9rem;
+            }
+            footer {
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -76,13 +107,12 @@
 
     <!-- Countdown Timer from Logwork -->
     <div class="countdown-container">
-        <script src="https://cdn.logwork.com/widget/countdown.js"></script>
         <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="columns" data-width="400" data-timezone="America/Los_Angeles" data-date="2025-02-23 18:00">Մնաց</a>
     </div>
 
     <div class="details">
         <p><strong>Baptism Party:</strong> February 23, 2025, 6:00 PM</p>
-        <p><strong>Contact:</strong>818-573-7766</p>
+        <p><strong>Contact:</strong> 818-573-7766</p>
         <p><strong>Location App Links:</strong></p>
         <p>
             <a href="https://beta.maps.apple.com/?auid=12961847606178316256&lsp=9902" target="_blank">Apple Map</a> | 
