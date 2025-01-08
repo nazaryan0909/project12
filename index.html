@@ -1,206 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join us for the joyous occasion of our son's baptism celebration!">
+    <meta name="keywords" content="baptism, invitation, celebration, Armenian">
+    <meta name="author" content="Alen N.">
     <title>Baptism Invitation</title>
     <script src="https://cdn.logwork.com/widget/countdown.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        /* General body styles */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #98A869; /* Updated sage green */
-            text-align: center;
-        }
-        header {
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-        }
-        header h1 {
-            font-family: 'Great Vibes', cursive;
-            font-size: 2rem;
-            color: #444;
-            margin: 10px 0;
-        }
-        .details {
-            margin: 20px auto;
-            font-size: 1.2rem;
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-            padding: 15px;
-            border-radius: 10px;
-            display: inline-block;
-            width: auto;
-        }
-        /* Gallery container with LED light effect */
-        .gallery-container {
-            display: flex;
-            flex-direction: column; /* Stack images vertically */
-            align-items: center; /* Center the container */
-            gap: 10px;
-            margin: 20px auto;
-            width: 80%; /* Updated width for better fit */
-            border-radius: 10px;
-            padding: 20px;
-            position: relative;
-            box-sizing: border-box;
-            animation: rgb-fade 3s infinite alternate; /* RGB LED light fade animation */
-            box-shadow: 0 0 20px #f0ffc2(36, 82, 46, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 0, 255, 0.7); /* Larger LED glow */
-        }
-
-        /* Animation for LED light fade effect */
-        @keyframes rgb-fade {
-            0% {
-                box-shadow: 0 0 20px #8e8e8e(255, 213, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 0, 255, 0.7);
-            }
-            50% {
-                box-shadow: 0 0 40px rgb(255, 255, 255), 0 0 40px rgb(125, 171, 125), 0 0 40px rgba(0, 0, 255, 1);
-            }
-            100% {
-                box-shadow: 0 0 60px #ffffff(2, 8, 5, 0.7), 0 0 60px rgba(0, 255, 0, 0.7), 0 0 60px rgba(0, 0, 255, 0.7);
-            }
-        }
-
-        .gallery-container img {
-            width: 100%; /* Make images responsive */
-            height: auto;
-            max-width: 350px; /* Limit max width */
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-            object-fit: cover;
-            border: 5px solid white; /* White border for each image */
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 0.9rem;
-            color: #555;
-        }
-        footer small {
-            font-size: 0.8rem;
-            display: block;
-            margin-top: 10px;
-        }
-        a {
-            color: #4c67ff;
-            text-decoration: none;
-        }
-        /* Centering the countdown timer */
-        .countdown-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px;
-        }
-
-        /* Circle frame for the baby's picture */
-        .baby-picture {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 5px solid #ffffff; /* Dark green border */
-            margin: 20px auto;
-            overflow: hidden;
-            background-image: url('https://rebeccajoslynphotography.com/wp-content/uploads/sites/11988/2019/02/Studio-Lafayette-Indiana-Noah-newborn-session_6-1024x682.jpg'); /* Replace with your baby picture URL */
-            background-size: cover;
-            background-position: center;
-        }
-
-        /* Armenian text for the invitation */
-        .invitation-text {
-            color: #2E6F3D; 
-            font-family: 'Great Vibes', cursive;
-            font-size: 1.4rem;
-            margin-top: 30px;
-        }
-
-        /* Add Italian-style font for titles "Restaurant" and "Church" */
-        .gallery-container h3 {
-            font-family: 'Dancing Script', cursive;
-            font-size: 2rem;
-            color: #ffffff; /* Dark green for text */
-            margin-bottom: 10px;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-            .details {
-                font-size: 1rem;
-                width: 90%;
-            }
-            .gallery-container img {
-                width: 100%;
-                max-width: 250px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.5rem;
-            }
-            .details {
-                font-size: 0.9rem;
-            }
-            footer {
-                font-size: 0.8rem;
-            }
-        }
+        
     </style>
 </head>
 <body>
+
+    
+
     <header>
-       <h1>Մկրտության Հրավիրատոմս</h1>
+        <h1>Մկրտության Հրավիրատոմս</h1>
     </header>
 
-    <!-- Armenian text for the invitation -->
     <h2 class="invitation-text">
-        Ընկերներ եվ բարեկամներ,<br>
-        ցանկանում ենք ձեզ հետ կիսել մեր որդու ․․․․ ի Մկրտության լուսավոր օրը
+        ․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․․<br>
+
     </h2>
 
-    <!-- Countdown Timer from Logwork -->
+    <div class="baby-photo">
+        <img src="./nkar/photo_2025-01-07_21-36-19.jpg" alt="Baby Photo">
+    </div>
+
     <div class="countdown-container">
-        <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="columns" data-width="400" data-timezone="America/Los_Angeles" data-date="2025-02-23 18:00">Մնաց</a>
+        <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="columns" data-width="664" data-timezone="America/Los_Angeles" data-date="2025-02-23 18:00" data-digitscolor="#b8b8b8">Մնաց</a>
     </div>
 
     <div class="details">
-        <p><strong>Baptism Party:</strong> February 23, 2025, 6:00 PM</p>
-        <p><strong>Contact:</strong> <a href="tel:+18185737766">818-573-7766</a></p>
-        <p><strong>Location App Links:</strong></p>
+        <p><strong>Մկրտության Արարողություն:</strong> Փետրվարի 23, 2025, 6:00 PM</p>
+        <p><strong>Ռեստորան։</strong> Aurora Banquet Hall</p>
+        <p><strong>Ռեստորանի հասցե:</strong> 7179 Foothill Blvd Tujunga, CA 91042</p>
         <p>
-            <a href="https://beta.maps.apple.com/?auid=12961847606178316256&lsp=9902" target="_blank">Apple Map</a> | 
+            <a href="https://beta.maps.apple.com/?auid=12961847606178316256&lsp=9902" target="_blank">Apple Map</a> |
             <a href="https://maps.app.goo.gl/kyitoxFpVbSM8hqL9" target="_blank">Google Map</a>
+        </p>
+        <p><strong>Եկեղեցու հասցե:</strong></p>
+        <p>
+            <a href="https://maps.apple.com/?address=3325%20N%20Glenoaks%20Blvd,%20Burbank,%20CA%20%2091504,%20United%20States&auid=1421413949146392253&ll=34.206150,-118.341631&lsp=9902&q=St.%20Leon%20Armenian%20Cathedral&t=h" target="_blank">Apple Map</a> |
+            <a href="https://maps.app.goo.gl/jMhnsPozSgWdKp2E6" target="_blank">Google Map</a>
         </p>
     </div>
 
-    <!-- Baby picture frame -->
-    <div class="baby-picture"></div>
-
-    <!-- Gallery for restaurant with title "Restaurant" -->
     <div class="gallery-container">
         <h3>Restaurant</h3>
-        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/Oa2HZF33HtCDbd3PHlz7bQ/o.jpg" alt="Restaurant 1">
-        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/xh-DeloHteSGsoiLOVTvXQ/o.jpg" alt="Restaurant 2">
-        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/VWAJz6LjaZ0EEQ7R2VdnmQ/o.jpg" alt="Restaurant 3">
+        <div class="gallery">
+            <img src="https://s3-media0.fl.yelpcdn.com/bphoto/Oa2HZF33HtCDbd3PHlz7bQ/o.jpg" alt="Restaurant 1">
+            <img src="https://s3-media0.fl.yelpcdn.com/bphoto/xh-DeloHteSGsoiLOVTvXQ/o.jpg" alt="Restaurant 2">
+            <img src="https://s3-media0.fl.yelpcdn.com/bphoto/VWAJz6LjaZ0EEQ7R2VdnmQ/o.jpg" alt="Restaurant 3">
+        </div>
     </div>
 
-    <!-- Gallery for church with title "Church" -->
     <div class="gallery-container">
         <h3>Church</h3>
-        <img src="https://lh3.googleusercontent.com/p/AF1QipN-FNsFFxSwWyIfKpLsemH2hlLPBtEP4Y59dqcU=s680-w680-h510" alt="Restaurant 1">
-        <img src="https://lh3.googleusercontent.com/p/AF1QipN-FNsFFxSwWyIfKpLsemH2hlLPBtEP4Y59dqcU=s680-w680-h510" alt="Restaurant 2">
+        <div class="gallery">
+            <img src="https://via.placeholder.com/350x250.png?text=Church+Photo+1" alt="Church Photo 1">
+            <img src="https://via.placeholder.com/350x250.png?text=Church+Photo+2" alt="Church Photo 2">
+            <img src="https://via.placeholder.com/350x250.png?text=Church+Photo+3" alt="Church Photo 3">
+        </div>
     </div>
 
-    <!-- Footer with text -->
     <footer>
-        <p>Website made by Alen N.</p>
+        <small>Website made by Alen N.</small>
     </footer>
+
 </body>
 </html>
+ 
